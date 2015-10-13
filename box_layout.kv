@@ -1,8 +1,21 @@
 BoxLayout:
     orientation: 'vertical'
     Button:
-        text: 'one'
+        text: 'Clear'
+    TextInput:
+        id: input_name
+        text: ''
+        id: input_label
     Button:
-        text: 'two'
+        text: 'Don\'t click here'
+        on_press: app.handle_boss()
+        id: boss_label
     Button:
-        text: 'three'
+        text: 'Greet'
+        on_press: app.handle_greet()
+        id: output_label
+    Label:
+        text: 'Enter your name'
+        id: input_name
+        text: ''
+        id: output_label
